@@ -3,7 +3,7 @@
 ### Getting Started
  - Fork this repository under your own account
  - Clone the forked repository to your computer
- - As opposed to the usual, please **commit only ONCE, at the end of the exam**
+ - As opposed to the usual thing, please **commit only ONCE, at the end of the exam**
  - All your answers and solutions should go in this repository
 
 ### What can I use?
@@ -11,13 +11,11 @@
  - Instead of copy-pasting your answers and solutions, write them in your own words.
 
 # Tasks
-## 1. Setup a new project
-- Create a new project inside your cloned repository
+### Setup a new project
+- Create a new Spring Boot project inside your cloned repository
 - Setup `.gitignore` file to exclude the IDE's generated files
-   - Just the src directory should be committed
+   - Just the src directory should be committed (containing all java and resource files)
 - Create a package called `com.greenfox.exams.spring` and work under that
-
-## 2. Entering the Project Phase Application
 
 ### Welcome page
 - the frontend should have the following components:
@@ -31,18 +29,15 @@
 - when data is submitted the backend should
     - check if the email address is valid
         - contains a `@` sign and a dot
-    - check if the textarea contains at least 3 of the following:
-```
-{"amazing", "awesome", "blithesome", "excellent", "fabulous", "fantastic", "favorable", "fortuitous", "great", "incredible", "ineffable", "mirthful", "outstanding", "perfect", "propitious", "remarkable", "smart", "spectacular", "splendid", "stellar", "stupendous", "super", "ultimate", "unbelievable", "wondrous"}
-```
+    - check if the textarea contains at least 3 of the following: `{"amazing", "awesome", "blithesome", "excellent", "fabulous", "fantastic", "favorable", "fortuitous", "great", "incredible", "ineffable", "mirthful", "outstanding", "perfect", "propitious", "remarkable", "smart", "spectacular", "splendid", "stellar", "stupendous", "super", "ultimate", "unbelievable", "wondrous"}`
     - check if the scale is equal to 10 or greater
-- if everything checks
+- if everything checks out
     - store the data (from the textarea, number input and email input) in the database
     - display the thank you page
 - if something's wrong
     - display the welcome page again with a message pointing out what's wrong
 - data initialization:
-    - Copy the following class to your project, it should run in your environment (so create everything that is needed here)
+    - Copy the following class to your project, make it run (so create everything that is needed to run)
 ```java
 @Component
 public class DataLoader extends CommandLineRunner {
