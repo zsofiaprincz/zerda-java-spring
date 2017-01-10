@@ -14,7 +14,9 @@
 ### Setup a new project
 - Create a new Spring Boot project inside your cloned repository
 - Setup `.gitignore` file to exclude the IDE's generated files
-   - Just the src directory should be committed (containing all java and resource files)
+   - the src directory should be committed (containing all java and resource files)
+   - the gradle related files should be committed
+   - the gitignore should be committed
 - Create a package called `com.greenfox.exams.spring` and work under that
 
 ### Welcome page
