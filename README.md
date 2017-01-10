@@ -42,7 +42,7 @@
     - Copy the following class to your project, make it run (so create everything that is needed to run)
 ```java
 @Component
-public class DataLoader extends CommandLineRunner {
+public class DataLoader implements CommandLineRunner {
   @Autowired
   ProjectRepo repo;
 
