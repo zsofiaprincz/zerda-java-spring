@@ -4,7 +4,7 @@
  - Fork this repository under your own account
  - Clone the forked repository to your computer
  - As opposed to the usual thing, please **commit only ONCE, at the end of the exam**
- - All your answers and solutions should go in this repository
+ - Go through the whole description before starting it
 
 ### What can I use?
  - You can use any resource online, but **please work individually**
