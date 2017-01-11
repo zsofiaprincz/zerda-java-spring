@@ -21,4 +21,6 @@ public class DataLoader implements CommandLineRunner {
         repo.save(new Project("Zerda Reader", "spring"));
         repo.save(new Project("Konnekt Contact Manager", "spring"));
     }
+
+    
 }
