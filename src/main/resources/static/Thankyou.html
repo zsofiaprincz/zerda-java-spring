@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank you</title>
+</head>
+<body>
+
+<p>Early access of Greenfox Academy Zerda Raptor Projects with tech tags</p>
+
+<table>
+    <tr>
+        <th>Project name</th>
+        <th>Project type</th>
+    </tr>
+
+
+<tr th:each="projectiteration : ${projectrepo}">
+    <td th:text="${projectiteration.projectName}"> </td>
+    <td th:text="${projectiteration.projectTag}"> </td>
+</tr>
+</table>
+
+
+</body>
+</html>

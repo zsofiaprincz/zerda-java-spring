@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+
+<h1 th:if="${feedbackService.wordChecker}"><p>Your evaluation is valid</p></h1>
+<h1 th:unless="${feedbackService.wordchecker}"><p th:text="${worngWords}"></p></h1>
+
+<h1 th:if="${feedbackService.emailChecker}"><p>Your email is valid</p></h1>
+<h1 th:unless="${feedbackService.emailChecker}"><p th:text="${worngEmail}"></p></h1>
+
+<h1 th:if="${feedbackService.scoreChecker}"><p>Your score is valid</p></h1>
+<h1 th:unless="${feedbackService.scoreChecker}"><p th:text="${wrongscore}"></p></h1>
+
+<h1>Thank you for visiting our website! To get early access to our planned projects, please fill in the following quick questionnaire.</h1>
+<form action="#" th:action="@{/welcome}" th:object="${feedback}" th:method="post">
+<table>
+    <tr>
+        <td><label>Describe your experience with Green Fox Academy so far:</label></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" th:field="*{textEvaluation}"/>
+        </td>
+    </tr>
+    <tr>
+        <td><label>On a scale of 1 to 10, how likely are you to recommend Green Fox Academy to a friend?</label></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" th:field="*{score}"/>
+        </td>
+    </tr>
+    <tr>
+        <td><label>And your email address:</label></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" th:field="*{email}"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" value="Submit"/>
+
+        </td>
+    </tr>
+</table>
+</form>
+
+
+
+</body>
+</html>
