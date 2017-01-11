@@ -50,7 +50,9 @@ public class MainController {
 
     @RequestMapping(value = "/thankyou", method = RequestMethod.GET)
     public String showThankYouPage(Model model){
-        model.addAttribute("dataloader", dataLoader.findAll());
+        model.addAttribute("dataloader", dataLoader.repo.findAll());
         return "Thankyou";
     }
+
+
 }

@@ -51,6 +51,25 @@ public class FeedbackService {
 
     }
 
+    public String displayWrongEmailFormatError(Feedback feedback) {
+        if (!emailChecker(feedback)){
+            return wrongEmail;
+        }return null;
+    }
+
+    public String displayWrongScoreError(Feedback feedback) {
+        if (!scoreChecker(feedback)){
+            return wrongscore;
+        }return null;
+    }
+
+    public String displayWrongTextError(Feedback feedback){
+        if (!wordchecker(feedback)){
+            return worngWords;
+        } return null;
+    }
+
+
 
 
 
